@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title> Обчислення площі прямокутного трикутника </title>
-<meta http-equiv="content-type" content="text/html; charset-utf-8" />
-<script language="Javascript">
-function area1 (a,h) {
-form1.output1.value=(a.value*h.value)/2; }
-</script>
-</head>
-<body>
-<p> Обчислення площі прямокутного трикутника </p>
-<form name="form1">
-<fieldset style="width: 40%">
-<legend> Введення даних </legend>
-Основа: <input type="text" size=7 name="st1">
-Висота: <input type="text" size=7 name="st2"> <br>
-</fieldset>
-<fieldset style="width: 40%">
-<legend> Обробка та виведення даних </legend>
-Площа: <input type="text" size=7 name="output1" readonly > <br>
-<input type="button" value="Обчислити" style="margin:19px" onClick="area1(form.st1, form1.st2)">
-</fieldset>
-</form>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Вхід у Facebook</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      #login-box {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 50px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background-color: #3b5998;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #2d4373;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="login-box">
+      <h1>Вхід у Facebook</h1>
+      <form>
+        <label for="email">Адреса електронної пошти:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Увійти">
+      </form>
+    </div>
+  </body>
 </html>
